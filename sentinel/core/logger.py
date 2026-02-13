@@ -1,16 +1,44 @@
+import os
 import hashlib
-import psycopg2
 from datetime import datetime
 from typing import Dict
 
-# You must configure DATABASE_URL in your environment
-import os
+import psycopg2
 
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 if not DATABASE_URL:
     raise RuntimeError("DATABASE_URL environment variable not set.")
+
+
+def _ensure_table_exists() -> None:
+    """
+    Ensures the sentinel_logs table exists.
+    Safe to call multiple times (idempotent).
+    """
+    conn = psycopg2.connect(DATABASE_URL)
+    try:
+        with conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    CREATE TABLE IF NOT EXISTS sentinel_logs (
+                        id SERIAL PRIMARY KEY,
+                        timestamp TIMESTAMP NOT NULL,
+                        query_hash TEXT NOT NULL,
+                        provider TEXT NOT NULL,
+                        model_used TEXT NOT NULL,
+                        estimated_cost FLOAT NOT NULL,
+                        actual_cost FLOAT NOT NULL,
+                        confidence_score FLOAT NOT NULL,
+                        refusal_flag BOOLEAN NOT NULL,
+                        latency_ms INTEGER NOT NULL,
+                        input_tokens INTEGER NOT NULL,
+                        output_tokens INTEGER NOT NULL
+                    );
+                """)
+    finally:
+        conn.close()
 
 
 def _hash_query(query: str) -> str:
@@ -35,6 +63,9 @@ def log_request(record: Dict) -> None:
     """
 
     try:
+        # Ensure table exists before insert
+        _ensure_table_exists()
+
         conn = psycopg2.connect(DATABASE_URL)
         cursor = conn.cursor()
 

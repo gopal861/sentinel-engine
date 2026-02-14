@@ -1,11 +1,45 @@
 from sentinel.config import MODEL_MAP, MODEL_ROUTING_THRESHOLD
 
 
-def route_model(provider: str, estimated_input_tokens: int) -> str:
-    if provider not in MODEL_MAP:
-        raise ValueError("Unsupported provider.")
 
-    if estimated_input_tokens < MODEL_ROUTING_THRESHOLD:
-        return MODEL_MAP[provider]["cheap"]
+from typing import Dict
 
-    return MODEL_MAP[provider]["premium"]
+
+CHEAP_MODEL = "gpt-4o-mini"
+PREMIUM_MODEL = "gpt-4o"
+
+
+CONFIDENCE_THRESHOLD = 0.75
+
+
+def select_model(confidence_score: float) -> str:
+    """
+    Deterministically select model based on confidence.
+
+    High confidence → cheap model
+    Low confidence → premium model
+    """
+
+    if confidence_score >= CONFIDENCE_THRESHOLD:
+        return CHEAP_MODEL
+
+    return PREMIUM_MODEL
+
+
+def route_request(confidence_score: float, provider: str) -> Dict:
+    """
+    Returns routing decision.
+
+    Output format:
+    {
+        provider: str,
+        model: str
+    }
+    """
+
+    model = select_model(confidence_score)
+
+    return {
+        "provider": provider,
+        "model": model
+    }

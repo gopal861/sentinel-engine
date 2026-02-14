@@ -162,21 +162,27 @@ for i, item in enumerate(DATASET):
 
 
 # ============================================
-# SAVE CSV PROOF FILE
+# SAVE CSV PROOF FILE (IMMUTABLE TIMESTAMP FILE)
 # ============================================
+
+import os
+from datetime import datetime
+
+# Ensure proof directory exists
+os.makedirs("proof", exist_ok=True)
+
+# Generate timestamp filename
+timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+
+OUTPUT_FILE = f"proof/routing_results_{timestamp}.csv"
 
 with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as csvfile:
 
     fieldnames = [
-
         "query",
-
         "expected_model",
-
         "model_used",
-
         "latency_ms"
-
     ]
 
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -208,7 +214,6 @@ for model, count in model_counter.items():
 
     print(f"Usage: {percentage:.2f}%\n")
 
-
 print(f"Total Requests: {total}")
 
 if latencies:
@@ -218,7 +223,6 @@ if latencies:
     print(f"Min Latency: {min(latencies):.2f} ms")
 
     print(f"Max Latency: {max(latencies):.2f} ms")
-
 
 routing_accuracy = (correct_routes / total) * 100 if total else 0
 
@@ -233,7 +237,6 @@ print(f"Correct Routes: {correct_routes}")
 print(f"Incorrect Routes: {incorrect_routes}")
 
 print(f"Routing Accuracy: {routing_accuracy:.2f}%")
-
 
 print(f"\nCSV proof saved at: {OUTPUT_FILE}")
 

@@ -1,45 +1,24 @@
-from sentinel.config import MODEL_MAP, MODEL_ROUTING_THRESHOLD
+from sentinel.config import MODEL_ROUTING_THRESHOLDS
 
 
-
-from typing import Dict
-
-
-CHEAP_MODEL = "gpt-4o-mini"
-PREMIUM_MODEL = "gpt-4o"
-
-
-CONFIDENCE_THRESHOLD = 0.75
-
-
-def select_model(confidence_score: float) -> str:
+def route_model(provider: str, input_tokens: int) -> str:
     """
-    Deterministically select model based on confidence.
+    Deterministic routing based on input token count.
 
-    High confidence → cheap model
-    Low confidence → premium model
+    This happens BEFORE the LLM call.
+    This is the core cost governance decision.
     """
 
-    if confidence_score >= CONFIDENCE_THRESHOLD:
-        return CHEAP_MODEL
+    if provider not in MODEL_ROUTING_THRESHOLDS:
+        raise ValueError(f"Unsupported provider: {provider}")
 
-    return PREMIUM_MODEL
+    routing_config = MODEL_ROUTING_THRESHOLDS[provider]
 
+    threshold = routing_config["threshold"]
+    cheap_model = routing_config["cheap_model"]
+    premium_model = routing_config["premium_model"]
 
-def route_request(confidence_score: float, provider: str) -> Dict:
-    """
-    Returns routing decision.
-
-    Output format:
-    {
-        provider: str,
-        model: str
-    }
-    """
-
-    model = select_model(confidence_score)
-
-    return {
-        "provider": provider,
-        "model": model
-    }
+    if input_tokens < threshold:
+        return cheap_model
+    else:
+        return premium_model

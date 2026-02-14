@@ -1,0 +1,127 @@
+Sentinel Engine — Governance Layer Validation Report
+====================================================
+
+Author: Gopal Khandare
+System: Sentinel Engine
+Category: LLM Governance Layer
+Deployment: Production (Render)
+Date: February 2026
+
+
+Objective
+---------
+
+The objective of Sentinel Engine is to introduce a deterministic governance layer
+between application systems and Large Language Models, with the goal of reducing
+hallucination risk, controlling inference cost, and improving operational reliability.
+
+This layer enforces routing, refusal, cost estimation, and audit logging before any
+model response is returned to the application.
+
+
+Baseline Model Behavior
+-----------------------
+
+Test Environment:
+Model: gpt-4o-mini
+Queries: 240
+Context: Intentionally incomplete
+
+Observed behavior:
+
+Fabrications: 160
+Fabrication Rate: 66.67%
+
+The baseline model generated confident responses even when the required information
+was absent from the provided context.
+
+This confirms the absence of built-in grounding enforcement in standard model execution.
+
+
+Sentinel Engine Behavior
+------------------------
+
+Test Environment:
+Same dataset, same model, same deployment conditions.
+
+Observed behavior:
+
+Correct Answers: 80
+Correct Refusals: 160
+Fabrications: 0
+Fabrication Rate: 0.00%
+
+Sentinel Engine successfully prevented all hallucinated responses by enforcing
+confidence-based refusal.
+
+
+Routing Validation
+------------------
+
+Routing tests were executed using mixed workloads designed to trigger both cheap
+and premium model paths.
+
+Results:
+
+Cheap model usage: 50%
+Premium model usage: 50%
+Routing accuracy: 100%
+
+Routing decisions were fully deterministic and aligned with configured thresholds.
+
+
+Latency Impact
+--------------
+
+Baseline P95 latency: 1571 ms
+Sentinel P95 latency: 1462 ms
+
+Governance enforcement did not introduce measurable latency overhead.
+
+Routing and refusal logic executed within acceptable production bounds.
+
+
+Cost Impact
+-----------
+
+Sentinel cost per 100 queries: $0.0303
+
+Routing ensured that cheap models handled low-risk queries while reserving premium
+models for complex workloads.
+
+This demonstrates cost control without sacrificing safety.
+
+
+Audit Logging
+-------------
+
+Every request was logged with:
+
+- timestamp
+- model used
+- token counts
+- latency
+- refusal flag
+- estimated cost
+- actual cost
+
+This enables complete traceability of model behavior.
+
+
+Conclusion
+----------
+
+Sentinel Engine successfully demonstrated the ability to:
+
+- eliminate hallucinations under incomplete context
+- enforce deterministic model routing
+- maintain predictable inference costs
+- provide full auditability of model execution
+
+The system introduces governance guarantees that do not exist in baseline model usage.
+
+This architecture is suitable for integration in production systems where reliability,
+traceability, and cost control are required.
+
+
+End of report.

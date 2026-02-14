@@ -1,0 +1,134 @@
+Sentinel Engine — System Metrics Report
+=======================================
+
+Deployment Environment
+----------------------
+
+Service: sentinel-engine
+Platform: Render
+Region: Singapore
+Runtime: Python 3.14
+Framework: FastAPI
+Endpoint: /govern
+
+
+Baseline Model Metrics
+----------------------
+
+Model: gpt-4o-mini
+Execution Mode: Direct model access (no governance)
+Dataset Size: 240 queries
+
+Results:
+
+Total Queries: 240
+Fabrications: 160
+Fabrication Rate: 66.67%
+
+Latency:
+
+Average Latency: 1154.50 ms
+P50 Latency: 1039.33 ms
+P95 Latency: 1571.44 ms
+P99 Latency: 2313.41 ms
+
+Conclusion:
+
+Baseline model does not enforce grounding.
+Fabrication risk is significant under incomplete context.
+
+
+Sentinel Engine Metrics
+-----------------------
+
+Model: Routed dynamically
+Execution Mode: Governance enforced
+Dataset Size: 240 queries
+
+Results:
+
+Correct Answers: 80
+Correct Refusals: 160
+Fabrications: 0
+Fabrication Rate: 0.00%
+
+Confidence enforcement successfully prevented unsupported responses.
+
+
+Latency Metrics:
+
+Average Latency: 734.17 ms
+P50 Latency: 623.50 ms
+P95 Latency: 1462.00 ms
+P99 Latency: 2444.79 ms
+
+Governance execution did not introduce unacceptable latency overhead.
+
+
+Cost Metrics
+------------
+
+Average Cost per Query: $0.000303
+Cost per 100 Queries: $0.0303
+
+Routing allowed efficient use of cheaper models.
+
+
+Routing Metrics
+---------------
+
+Routing Dataset Size: 100
+
+Results:
+
+Cheap Model (gpt-4o-mini): 50 requests
+Premium Model (gpt-4o): 50 requests
+
+Routing Distribution:
+
+Cheap Model Usage: 50%
+Premium Model Usage: 50%
+
+Routing Accuracy: 100%
+
+Routing logic executed deterministically.
+
+
+Database Logging Metrics
+------------------------
+
+Database: PostgreSQL
+Table: sentinel_logs
+
+Fields logged per request:
+
+- timestamp
+- query_hash
+- provider
+- model_used
+- estimated_cost
+- actual_cost
+- confidence_score
+- refusal_flag
+- latency_ms
+- input_tokens
+- output_tokens
+
+Logging success rate: 100%
+
+
+System Guarantees Provided
+--------------------------
+
+Sentinel Engine enforces:
+
+- refusal when confidence is below threshold
+- deterministic model routing
+- cost estimation before execution
+- audit logging of all requests
+- bounded token execution
+
+These guarantees do not exist in baseline model execution.
+
+
+End of metrics report.

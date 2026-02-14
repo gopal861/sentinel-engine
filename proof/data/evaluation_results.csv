@@ -1,0 +1,241 @@
+query,expected,refusal,confidence,estimated_cost,latency_ms,input_tokens,output_tokens
+When was Tesla founded?,answer,False,0.7216,0.000303,4003,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,1704,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,727,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,2044,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,1087,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,709,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,1462,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,1305,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,840,91,10
+Who founded Amazon?,answer,False,0.7163,0.00030225,1085,90,5
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,1859,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,759,93,10
+Who created Python?,answer,False,0.7932,0.000303,894,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,902,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,784,98,10
+Who founded Google?,answer,False,1.0,0.00030225,830,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,975,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,1138,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,1050,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,686,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,748,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,770,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,741,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,687,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,878,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,848,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,480,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,900,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,876,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,704,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,583,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,1799,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,670,91,10
+Who founded Amazon?,answer,False,0.7163,0.00030225,500,90,5
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,745,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,1971,93,10
+Who created Python?,answer,False,0.7932,0.000303,473,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,537,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,1016,98,10
+Who founded Google?,answer,False,1.0,0.00030225,998,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,754,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,922,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,657,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,508,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,2303,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,504,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,502,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,608,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,1334,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,1354,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,496,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,2769,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,482,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,739,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,745,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,700,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,672,91,10
+Who founded Amazon?,answer,False,0.6007,0.00030225,382,90,3
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,2499,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,538,93,10
+Who created Python?,answer,False,0.7932,0.000303,455,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,689,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,721,98,10
+Who founded Google?,answer,False,1.0,0.00030225,2360,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,807,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,526,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,648,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,851,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,554,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,816,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,712,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,684,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,733,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,806,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,1628,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,689,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,499,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,752,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,426,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,620,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,1462,91,10
+Who founded Amazon?,answer,False,0.7163,0.00030225,681,90,5
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,634,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,516,93,10
+Who created Python?,answer,False,0.7932,0.000303,481,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,570,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,535,98,10
+Who founded Google?,answer,False,1.0,0.00030225,579,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,554,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,512,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,878,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,485,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,490,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,711,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,451,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,680,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,739,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,622,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,560,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,1059,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,694,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,705,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,635,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,614,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,689,91,10
+Who founded Amazon?,answer,False,0.6889,0.00030225,498,90,7
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,492,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,612,93,10
+Who created Python?,answer,False,0.7932,0.000303,551,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,758,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,668,98,10
+Who founded Google?,answer,False,1.0,0.00030225,563,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,699,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,471,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,484,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,484,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,546,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,564,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,454,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,516,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,493,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,998,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,702,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,775,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,501,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,795,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,537,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,627,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,626,91,10
+Who founded Amazon?,answer,False,0.7163,0.00030225,468,90,5
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,549,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,492,93,10
+Who created Python?,answer,False,0.722,0.000303,662,95,8
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,988,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,632,98,10
+Who founded Google?,answer,False,1.0,0.00030225,1148,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,507,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,669,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,671,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,842,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,436,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,420,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,519,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,450,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,490,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,554,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,590,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,625,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,462,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,541,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,823,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,775,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,560,91,10
+Who founded Amazon?,answer,False,0.7163,0.00030225,651,90,5
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,738,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,840,93,10
+Who created Python?,answer,False,0.7932,0.000303,638,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,451,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,610,98,10
+Who founded Google?,answer,False,1.0,0.00030225,579,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,548,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,587,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,595,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,707,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,473,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,490,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,614,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,595,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,533,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,620,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,661,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,1135,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,553,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,1175,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,845,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,626,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,626,91,10
+Who founded Amazon?,answer,False,0.6889,0.00030225,530,90,7
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,566,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,836,93,10
+Who created Python?,answer,False,0.7932,0.000303,651,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,500,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,502,98,10
+Who founded Google?,answer,False,1.0,0.00030225,824,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,504,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,561,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,576,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,969,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,547,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,556,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,528,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,630,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,487,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,580,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,531,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,739,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,878,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,585,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,509,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,532,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,526,91,10
+Who founded Amazon?,answer,False,0.7163,0.00030225,440,90,5
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,675,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,569,93,10
+Who created Python?,answer,False,0.7932,0.000303,503,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,580,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,621,98,10
+Who founded Google?,answer,False,1.0,0.00030225,651,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,679,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,502,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,562,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,554,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,582,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,660,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,673,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,545,93,10
+When was Tesla founded?,answer,False,0.7216,0.000303,552,95,8
+Who is the CEO of Tesla?,refuse,True,0.1443,0.0003033,668,97,10
+What is Tesla's market capitalization?,refuse,True,0.1443,0.0003033,526,97,10
+Who founded Apple Inc.?,answer,False,1.0,0.00030375,639,99,19
+What is Apple's current stock price?,refuse,True,0.1257,0.0003039,551,101,10
+Who is the current CEO of Apple?,refuse,True,0.1257,0.00030405,948,102,10
+Where is the Eiffel Tower located?,answer,False,1.0,0.00030225,469,90,8
+How tall is the Eiffel Tower?,refuse,True,0.2984,0.00030225,543,90,10
+How many visitors does it receive annually?,refuse,True,0.2984,0.0003024,589,91,10
+Who founded Amazon?,answer,False,0.6889,0.00030225,535,90,7
+What is Amazon's annual revenue?,refuse,True,0.163,0.0003027,723,93,10
+Who is Amazon's current CEO?,refuse,True,0.163,0.0003027,588,93,10
+Who created Python?,answer,False,0.7932,0.000303,678,95,9
+What is the latest version of Python?,refuse,True,0.1333,0.0003036,488,99,10
+How many developers use Python globally?,refuse,True,0.1333,0.00030345,547,98,10
+Who founded Google?,answer,False,1.0,0.00030225,545,90,11
+What is Google's current revenue?,refuse,True,0.1796,0.00030255,578,92,10
+Who is Google's current CEO?,refuse,True,0.1796,0.00030255,602,92,10
+When was NASA established?,answer,False,0.6183,0.0003027,473,93,8
+What is NASA's annual budget?,refuse,True,0.2347,0.000303,567,95,10
+Who is the current NASA administrator?,refuse,True,0.2347,0.000303,584,95,10
+Who founded Microsoft?,answer,False,1.0,0.0003021,499,89,10
+What is Microsoft's current market cap?,refuse,True,0.1725,0.00030255,470,92,10
+Who is the current CEO of Microsoft?,refuse,True,0.1725,0.0003027,471,93,10

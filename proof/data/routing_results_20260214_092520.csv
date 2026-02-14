@@ -1,0 +1,101 @@
+query,expected_model,model_used,latency_ms
+Who created Python?,cheap,gpt-4o-mini,10508.002042770386
+Who created Python?,cheap,gpt-4o-mini,2047.3055839538574
+Who created Python?,cheap,gpt-4o-mini,1732.600212097168
+Who created Python?,cheap,gpt-4o-mini,2102.5137901306152
+Who created Python?,cheap,gpt-4o-mini,1906.4457416534424
+Who created Python?,cheap,gpt-4o-mini,1676.2406826019287
+Who created Python?,cheap,gpt-4o-mini,1839.5533561706543
+Who created Python?,cheap,gpt-4o-mini,1825.9778022766113
+Who created Python?,cheap,gpt-4o-mini,2332.5700759887695
+Who created Python?,cheap,gpt-4o-mini,2071.6071128845215
+Who created Python?,cheap,gpt-4o-mini,2008.7850093841553
+Who created Python?,cheap,gpt-4o-mini,2004.2619705200195
+Who created Python?,cheap,gpt-4o-mini,2564.113140106201
+Who created Python?,cheap,gpt-4o-mini,1838.8488292694092
+Who created Python?,cheap,gpt-4o-mini,2636.9094848632812
+Who created Python?,cheap,gpt-4o-mini,2151.9570350646973
+Who created Python?,cheap,gpt-4o-mini,2094.4197177886963
+Who created Python?,cheap,gpt-4o-mini,2083.5371017456055
+Who created Python?,cheap,gpt-4o-mini,2216.616630554199
+Who created Python?,cheap,gpt-4o-mini,1684.0314865112305
+Who created Python?,cheap,gpt-4o-mini,1521.8336582183838
+Who created Python?,cheap,gpt-4o-mini,1679.6798706054688
+Who created Python?,cheap,gpt-4o-mini,1515.8636569976807
+Who created Python?,cheap,gpt-4o-mini,1676.9204139709473
+Who created Python?,cheap,gpt-4o-mini,1405.303955078125
+Who created Python?,cheap,gpt-4o-mini,1558.7961673736572
+Who created Python?,cheap,gpt-4o-mini,1537.0707511901855
+Who created Python?,cheap,gpt-4o-mini,1532.3224067687988
+Who created Python?,cheap,gpt-4o-mini,1880.3236484527588
+Who created Python?,cheap,gpt-4o-mini,1505.3846836090088
+Who created Python?,cheap,gpt-4o-mini,1993.8971996307373
+Who created Python?,cheap,gpt-4o-mini,1803.9863109588623
+Who created Python?,cheap,gpt-4o-mini,1592.7140712738037
+Who created Python?,cheap,gpt-4o-mini,1441.8377876281738
+Who created Python?,cheap,gpt-4o-mini,1643.6870098114014
+Who created Python?,cheap,gpt-4o-mini,1571.9242095947266
+Who created Python?,cheap,gpt-4o-mini,1653.7232398986816
+Who created Python?,cheap,gpt-4o-mini,1612.0901107788086
+Who created Python?,cheap,gpt-4o-mini,2234.928846359253
+Who created Python?,cheap,gpt-4o-mini,2025.1071453094482
+Who created Python?,cheap,gpt-4o-mini,1805.6135177612305
+Who created Python?,cheap,gpt-4o-mini,1613.7030124664307
+Who created Python?,cheap,gpt-4o-mini,1480.180263519287
+Who created Python?,cheap,gpt-4o-mini,1954.5519351959229
+Who created Python?,cheap,gpt-4o-mini,1624.1798400878906
+Who created Python?,cheap,gpt-4o-mini,2660.388469696045
+Who created Python?,cheap,gpt-4o-mini,1513.6761665344238
+Who created Python?,cheap,gpt-4o-mini,1262.2275352478027
+Who created Python?,cheap,gpt-4o-mini,1964.8914337158203
+Who created Python?,cheap,gpt-4o-mini,1607.264757156372
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,1903.3458232879639
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,2893.113136291504
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,3202.470541000366
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,1863.426923751831
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,2611.555576324463
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,2229.2683124542236
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,19619.807481765747
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,19346.144437789917
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,5192.330598831177
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12187.01434135437
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12137.051820755005
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12484.632015228271
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,18451.17139816284
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12591.79401397705
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,5672.474145889282
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12254.103183746338
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,19189.180374145508
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,5317.446231842041
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,18686.34295463562
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,6405.62105178833
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,11629.927635192871
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12999.216794967651
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,11522.029876708984
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12238.006114959717
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,13506.047248840332
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,11191.824674606323
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,20662.482976913452
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,1455.5916786193848
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,21595.49903869629
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,5286.512136459351
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12302.106618881226
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12161.0586643219
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,18881.2313079834
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,6396.912336349487
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12486.083269119263
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12191.931009292603
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,17872.95699119568
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,5791.37659072876
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12778.164148330688
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,17979.928016662598
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,8590.421676635742
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,9478.07264328003
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12389.557123184204
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,18632.160425186157
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,17606.8274974823
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,7078.305244445801
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,5864.467144012451
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,12207.414388656616
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,13045.874834060669
+Explain transformer architecture and distributed consensus in detail.,premium,gpt-4o,11521.986722946167

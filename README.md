@@ -2,7 +2,7 @@
 
 A governance layer that sits between your application and LLM providers. It enforces cost control, prevents out-of-context answers from reaching users, and logs everything.   
 
-**Deployment:** : (https://sentinel-engine-amdw.onrender.com/)
+**Deployment:** : https://sentinel-engine-amdw.onrender.com/docs
 
 ## The Problem
 
